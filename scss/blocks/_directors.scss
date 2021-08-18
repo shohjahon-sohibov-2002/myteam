@@ -1,0 +1,156 @@
+// DIRECTORS
+
+.directors {
+  background-color: #004047;
+  background-image: url(/img/directors-top.png), url(/img/directors-bottom.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 680px) 0, calc(50% + 625px) 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.directors__heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: $color-text
+}
+
+.directors__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include list-unstyled;
+}
+
+.directors__item {
+  width: 340px;
+  background-color: #012F34;
+  margin-bottom: 76px;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-bottom: 32;
+  padding-right: 24px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.directors-item__avatar {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
+
+.directors-item__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.directors-item__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: $color-text;
+}
+
+.directors-item__img {
+  transform: translateY(28px);
+}
+
+.directors__item-hover {
+  padding-top: 35px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 73px;
+  text-align: center;
+  background-color: #002529;
+  border-radius: 3px;
+}
+
+//========== RESPONSIVE ===========
+
+@include breakpoint-down (1085px) {
+
+
+.directors {
+  background-position: calc(50% - 59%) 0, calc(50% + 50%) 100%;
+}
+
+  .directors__list {
+    justify-content: space-around;
+  }
+
+  .directors__item {
+    background-color: #012F34;
+  }
+
+}
+
+@include breakpoint-down (768px) {
+
+  .directors {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-position: calc(50% - 70%) 0, calc(50% + 50%) 100%;
+  }
+
+  .directors__list {
+    justify-content: center;
+  }
+
+  .directors__item {
+    width: 281px;
+    background-color: #012F34;
+  }
+
+  .directors__item:nth-child(odd) {
+    margin-right: 11px;
+  }
+
+  .directors__heading {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+@include breakpoint-down (375px) {
+
+  .directors {
+    background-position: calc(50% - 100%) -5%, calc(50% + 50%) 100%;
+  }
+
+  .directors__list {
+    justify-content: center;
+  }
+
+  .directors__item {
+    width: 327px;
+    background-color: #012F34;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

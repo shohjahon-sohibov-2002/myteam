@@ -1,0 +1,146 @@
+// RESULT
+
+.result {
+  background-color: $color-bg;
+  background-image: url(/img/result-top-img.svg),url(/img/result-bottom-img.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 605px) 0, calc(50% + 580px) 100%;
+  position: relative;
+
+}
+
+.result__wrapper {
+  
+}
+
+.result-top-img {
+  position: absolute;
+  margin-left: -130px;
+}
+
+.result__heading {
+  margin: 0;
+  padding: 0;
+  padding-top: 140px;
+  padding-bottom: 56px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.result__heading--color-word {
+  color: #79C8C7;
+}
+
+.result__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-list__item {
+  width: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+
+.result-item__img-top {
+  margin-bottom: -35px;
+}
+
+.result-item__text1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+// .result-item__text1::before {
+//   content: ""; 
+//   background-image: url(/img/“.png);
+//   width: 67px;
+//   height: 58px;
+//   position: absolute;
+//   top: 280px;
+// }
+
+.result-item__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+
+.result-item__text2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.result__img {
+padding-bottom: 140px;
+}
+
+.result-bottom-img {
+  position: absolute;
+  right: 0px;
+  top: 688px;
+}
+
+// RESPONSIVE
+
+@include breakpoint-down (1030px) {
+
+  .result-bottom-img {
+    top: 688px;
+  }
+}
+
+@include breakpoint-down (958px) {
+
+  .result-bottom-img {
+    top: 760px;
+  }
+}
+
+@include breakpoint-down (860px) {
+
+  .result__heading {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .result__list {
+    flex-direction: column;
+  }
+
+  .result-list__item {
+    width: 80%;
+    margin-top: -30px;
+
+  }
+
+  .result-bottom-img {
+    display: none;
+  }
+
+} 

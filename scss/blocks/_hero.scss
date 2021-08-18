@@ -1,0 +1,175 @@
+// HERO
+
+.hero {
+  background-color: $color-bg;
+  background-image: url(/img/header-bottom-img.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 250px) 120%;
+  padding-bottom: 250px;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__img {
+  margin-left: -250px;
+  margin-right: 40px;
+}
+
+.hero__heading {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: $color-text;
+  width: 550px;
+  margin-left:0px;
+}
+
+.hero__heading--color-word {
+  color: #F67E7E;
+}
+
+.header__line {
+  position: relative;
+  width: 50px;
+  border-top: 4px solid #79C8C7;
+  top: -80px;
+  left: 80px;
+}
+
+.hero__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-text;
+  width: 445px;
+  margin-left: 30px;
+  padding-top: 79px;
+}
+
+.hero__img-bottom {
+  z-index: 1;
+  position: absolute;
+  top: 600px;
+  right: 200px;
+}
+
+// RESPONSIVE
+
+@include breakpoint-down (1100px) {
+
+  .hero {
+    background-position: calc(50% + 25%) 120%;
+  }
+  
+  .hero__wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .hero__img {
+    display: none;
+  }
+  
+  .hero__heading {
+    text-align: center;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+  }
+  
+  .header__line {
+    display: none;
+  }
+  
+  .hero__text {
+    text-align: center;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero__img-bottom {
+    z-index: 1;
+    position: absolute;
+    top: 650px;
+    right: 150px;
+  }
+}
+
+@include breakpoint-down (768px) {
+  
+  .hero__heading {
+    font-size: 64px;
+    line-height: 56px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }    
+  
+  .hero__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .hero__img-bottom {
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down (768px) {
+  
+  .hero__heading {
+    font-size: 54px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    width: 400px;
+  }    
+
+  .hero__img-bottom {
+    z-index: 1;
+    position: absolute;
+    top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down (620px) {
+  
+  .hero__heading {
+    font-size: 54px;
+    line-height: 56px;
+    margin-bottom: 20px;
+    width: 400px;
+  }    
+
+  .hero__img-bottom {
+    z-index: 1;
+    position: relative;
+    top: 350px;
+    left: auto;
+    right: auto ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
